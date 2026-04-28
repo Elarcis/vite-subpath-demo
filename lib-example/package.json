@@ -1,0 +1,21 @@
+{
+  "name": "rollup-subpath-demo-lib",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "",
+  "type": "module",
+  "exports": {
+    ".": "./lib/index.js",
+    "./symbol": "./lib/symbol.js"
+  },
+  "imports": {
+    "#src/*": "./src/*"
+  },
+  "scripts": {
+    "build": "tsc --build"
+  },
+  "devDependencies": {
+    "typescript": "^6.0.3"
+  }
+}

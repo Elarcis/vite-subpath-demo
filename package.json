@@ -1,0 +1,10 @@
+{
+  "name": "rollup-subpath-demo",
+  "workspaces": [
+    "app-example",
+    "lib-example"
+  ],
+  "scripts": {
+    "build": "npm -w lib-example run build && npm -w app-example run build"
+  }
+}
