@@ -1,10 +1,11 @@
 {
-  "name": "rollup-subpath-demo",
+  "name": "vite-subpath-demo",
   "workspaces": [
     "app-example",
     "lib-example"
   ],
   "scripts": {
-    "build": "npm -w lib-example run build && npm -w app-example run build"
+    "build": "npm -w lib-example run build && npm -w app-example run build",
+    "start": "node ./app-example/dist/index.mjs"
   }
 }
